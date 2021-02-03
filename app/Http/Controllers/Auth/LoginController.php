@@ -48,4 +48,9 @@ class LoginController extends Controller
 
         return $this->loggedOut($request) ?: redirect($this->redirectAfterLogout);
     }
+
+    public function username()
+    {
+        return 'username';
+    }
 }
